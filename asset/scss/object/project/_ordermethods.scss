@@ -1,0 +1,67 @@
+// ==================================================================================
+// 変数呼び出し
+// ==================================================================================
+@use "../../foundation/variable" as *;
+
+
+// ==================================================================================
+// メディアクエリ呼び出し
+// ==================================================================================
+@use "../../foundation/mixin" as *;
+
+
+// ==================================================================================
+// front-page オーダー方法の全体調整
+// ==================================================================================
+.p-ordermethods {
+    padding: 20px;
+    @include tablet {
+        display: flex;
+        justify-content: space-around;
+        padding: 40px;
+    }
+    @include pc {
+        padding: 7.8%;
+    }
+    &__takeout {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 642px;
+        padding: 0 15px;
+        margin-bottom: 20px;
+        background-image: url(../../../../img/front-takeout.jpg);
+        background-size: cover;
+        @include tablet {
+            width: 42.8vw;
+            min-height: 681px;
+            margin-bottom: 0;
+        }
+        @include pc {
+            width: 40.2vw;
+            min-height: 1197px;
+        }
+    }
+    &__eatin {
+        @extend .p-ordermethods__takeout;
+        background-image: url(../../../../img/front-eatin.jpg);
+        @include tablet {
+            margin-right: 0;
+        }
+    }
+    &__flex--bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+    }
+    &__dl1, &__dl2{
+        margin-bottom: 16px;
+        background: rgba(255, 255, 255, 0.8);
+    }
+    &__dt {
+        padding: 16px 0 0 16px;
+    }
+    &__dd {
+        padding: 16px;
+    }
+}

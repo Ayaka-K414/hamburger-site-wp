@@ -1,0 +1,54 @@
+// ==================================================================================
+// 変数呼び出し
+// ==================================================================================
+@use "../../foundation/variable" as *;
+
+
+// ==================================================================================
+// メディアクエリ呼び出し
+// ==================================================================================
+@use "../../foundation/mixin" as *;
+
+
+// ==================================================================================
+// archive-page
+// ==================================================================================
+.p-menu-cards {
+    &__list {
+        padding-bottom: 20px;
+        @include pc {
+            padding-bottom: 30px;
+        }
+    }
+    &__fig {
+        @include tablet {
+        display: flex;
+        }
+    }
+    &__image {
+        display: block;
+        width: 100%;
+        height: auto;
+        padding-bottom: 0;
+        margin-bottom: 0;    
+        @include tablet {
+            width: 50%;
+            object-fit: cover;
+            object-position: left;
+        }
+    }
+    &__summary {
+        padding: 33px 17px 44px;
+        background-color: $color--cardbg;
+        @include tablet {
+            width: 50%;
+            padding: 31px 37px 40px;
+        }
+        @include pc {
+            padding: 44px 63px 70px;
+        }
+    }
+    &__text {
+        padding-bottom: 40px;
+    }
+}
