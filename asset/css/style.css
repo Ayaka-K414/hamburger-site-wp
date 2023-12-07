@@ -43,7 +43,7 @@ a {
   width: 100%;
   height: 150px;
   padding: 16px 0;
-  background-image: url(../../../../img/footerbg.png);
+  background-image: url(../../img/footerbg.png);
   background-size: cover;
 }
 @media screen and (min-width: 1024px) {
@@ -52,7 +52,7 @@ a {
   }
 }
 
-.c-button, .c-button--large {
+#searchsubmit, .c-button--large {
   width: 24vw;
   height: 46px;
   border: 1px solid #707070;
@@ -63,12 +63,12 @@ a {
   font-family: "Roboto", sans-serif;
 }
 @media screen and (min-width: 768px) {
-  .c-button, .c-button--large {
+  #searchsubmit, .c-button--large {
     width: 16.3vw;
   }
 }
 @media screen and (min-width: 1024px) {
-  .c-button, .c-button--large {
+  #searchsubmit, .c-button--large {
     width: 7.08vw;
   }
 }
@@ -294,7 +294,7 @@ a {
   font-size: 24px;
 }
 
-.c-input {
+#s {
   width: 57.6vw;
   max-width: 364px;
   height: 46px;
@@ -305,12 +305,12 @@ a {
   background-color: #FFF;
 }
 @media screen and (min-width: 768px) {
-  .c-input {
+  #s {
     width: 47.48vw;
   }
 }
 @media screen and (min-width: 1024px) {
-  .c-input {
+  #s {
     width: 20vw;
     max-width: 396px;
   }
@@ -649,7 +649,7 @@ body.is-active {
   display: flex;
   align-items: center;
   height: 285px;
-  background-image: url(../../../../img/front-main.jpg);
+  background-image: url(../../img/front-main.jpg);
   background-size: cover;
 }
 @media screen and (min-width: 768px) {
@@ -664,17 +664,17 @@ body.is-active {
   align-items: stretch;
   position: relative;
   z-index: 1;
-  background-image: url(../../../../img/archive-main--sp.jpg);
+  background-image: url(../../img/archive-main--sp.jpg);
 }
 @media screen and (min-width: 768px) {
   .p-main-visual--archive {
-    background-image: url(../../../../img/archive-main--tab.jpg);
+    background-image: url(../../img/archive-main--tab.jpg);
   }
 }
 @media screen and (min-width: 1024px) {
   .p-main-visual--archive {
     height: 235px;
-    background-image: url(../../../../img/archive-main--pc.jpg);
+    background-image: url(../../img/archive-main--pc.jpg);
   }
 }
 .p-main-visual--archive::before {
@@ -694,7 +694,7 @@ body.is-active {
 
 .p-main-visual--single, .p-main-visual--shop {
   height: 215px;
-  background-image: url(../../../../img/single-main.jpg);
+  background-image: url(../../img/single-main.jpg);
 }
 @media screen and (min-width: 768px) {
   .p-main-visual--single, .p-main-visual--shop {
@@ -703,7 +703,7 @@ body.is-active {
 }
 
 .p-main-visual--shop {
-  background-image: url(../../../../img/black-steel-lamp-post-1070945.jpg);
+  background-image: url(../../img/black-steel-lamp-post-1070945.jpg);
 }
 @media screen and (min-width: 768px) {
   .p-main-visual--shop {
@@ -733,7 +733,7 @@ body.is-active {
   min-height: 642px;
   padding: 0 15px;
   margin-bottom: 20px;
-  background-image: url(../../../../img/front-takeout.jpg);
+  background-image: url(../../img/front-takeout.jpg);
   background-size: cover;
 }
 @media screen and (min-width: 768px) {
@@ -750,7 +750,7 @@ body.is-active {
   }
 }
 .p-ordermethods__eatin {
-  background-image: url(../../../../img/front-eatin.jpg);
+  background-image: url(../../img/front-eatin.jpg);
 }
 @media screen and (min-width: 768px) {
   .p-ordermethods__eatin {
@@ -776,7 +776,7 @@ body.is-active {
 .p-map {
   position: relative;
   z-index: 10;
-  background-image: url(../../../../img/front-map.png);
+  background-image: url(../../img/front-map.png);
   background-size: cover;
   background-color: #000000;
 }
@@ -813,19 +813,17 @@ body.is-active {
   }
 }
 
-.p-form {
+#searchform {
   display: flex;
   justify-content: center;
   margin: 40px 0;
-}
-.p-form__input {
   position: relative;
 }
-.p-form__input::before {
+#searchform::before {
   content: "\f002";
   position: absolute;
   top: 11px;
-  left: 9px;
+  left: 48px;
   width: 24px;
   height: 24px;
   color: #808080;
@@ -834,7 +832,7 @@ body.is-active {
   font-family: "Font Awesome 5 Free";
 }
 @media screen and (min-width: 1024px) {
-  .p-form {
+  #searchform {
     margin-right: 32px;
   }
 }

@@ -30,7 +30,7 @@
         min-height: 642px;
         padding: 0 15px;
         margin-bottom: 20px;
-        background-image: url(../../../../img/front-takeout.jpg);
+        background-image: url(../../img/front-takeout.jpg);
         background-size: cover;
         @include tablet {
             width: 42.8vw;
@@ -44,7 +44,7 @@
     }
     &__eatin {
         @extend .p-ordermethods__takeout;
-        background-image: url(../../../../img/front-eatin.jpg);
+        background-image: url(../../img/front-eatin.jpg);
         @include tablet {
             margin-right: 0;
         }

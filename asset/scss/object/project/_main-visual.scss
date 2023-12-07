@@ -17,7 +17,7 @@
     display: flex;
     align-items: center;
     height: 285px;
-    background-image: url(../../../../img/front-main.jpg);
+    background-image: url(../../img/front-main.jpg);
     background-size: cover;
     @include tablet {
         background-position: center;
@@ -35,13 +35,13 @@
     align-items: stretch;
     position: relative;
     z-index: 1;
-    background-image: url(../../../../img/archive-main--sp.jpg);
+    background-image: url(../../img/archive-main--sp.jpg);
     @include tablet {
-        background-image: url(../../../../img/archive-main--tab.jpg);
+        background-image: url(../../img/archive-main--tab.jpg);
     }
     @include pc {
         height: 235px;
-        background-image: url(../../../../img/archive-main--pc.jpg);
+        background-image: url(../../img/archive-main--pc.jpg);
     }
     &::before {
         content: "";
@@ -66,7 +66,7 @@
 .p-main-visual--single {
     @extend .p-main-visual;
     height: 215px;
-    background-image: url(../../../../img/single-main.jpg);
+    background-image: url(../../img/single-main.jpg);
     @include tablet {
         height: 505px;
     }
@@ -78,7 +78,7 @@
 // ==================================================================================
 .p-main-visual--shop {
     @extend .p-main-visual--single;
-    background-image: url(../../../../img/black-steel-lamp-post-1070945.jpg);
+    background-image: url(../../img/black-steel-lamp-post-1070945.jpg);
     @include tablet {
         height: 505px;
     }
