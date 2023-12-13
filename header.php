@@ -15,7 +15,7 @@
 
 <!-- ヘッダー -->
             <header class="l-header p-header">
-                <h1 class="p-header__title c-title--logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Hamburger</a></h1>
+                <h1 class="p-header__title c-title--logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
                 <button class="p-header__menu c-menu">Menu</button>
                 <?php get_search_form(); ?>
             </header>

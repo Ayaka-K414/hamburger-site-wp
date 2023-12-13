@@ -13,7 +13,7 @@
 // ==================================================================================
 // all
 // ==================================================================================
-#searchsubmit {   // 検索ボタン
+.search-submit {   // 検索ボタン
     width: 24vw;
     height: 46px;
     border: 1px solid $color--titleGray;
@@ -52,7 +52,7 @@
 // single-page
 // ==================================================================================
 .c-button--large {
-    @extend #searchsubmit;
+    @extend .search-submit;
     width: 100%;
     height: 81px;
     margin-bottom: 30px;

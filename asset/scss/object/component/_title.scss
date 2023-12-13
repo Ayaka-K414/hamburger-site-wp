@@ -14,7 +14,7 @@
 // front-page
 // ==================================================================================
 .c-title--logo {   // headerのロゴ
-    padding-top: 43px;
+    padding: 43px 0;
     color: $color--titleGray;
     font-weight: 700;
     font-size: 4.0rem;
@@ -75,7 +75,7 @@
     }
 }
 
-.c-title--sidebar {   // メニュー一覧の見出し
+.menu-item-object-category a {   // メニュー一覧のカテゴリー見出し
     padding-left: 46px;
     color: $color--titleGray;
     font-weight: 700;

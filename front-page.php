@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+    <?php get_header(); ?>
 <!-- メインコンテンツ -->
             <main class="l-main">
 <!-- メインビジュアル -->
@@ -48,6 +48,7 @@
                         </div>
                     </li>
                 </ul>
+
 <!-- マップ -->
                 <section class="p-map">
                     <div class="p-map__res-pc">
@@ -58,6 +59,16 @@
                 </section>
             </main>
         </div>
-<?php get_sidebar(); ?>
+
+<!-- メニューサイドバー PC版でflexした時の右側、幅調整-->
+        <div class="c-flex--child-sidebar">
+            <div class="c-menubg"></div>
+            <button class="p-sidebar__menu c-menu--close"></button>
+            <h2 class="p-sidebar__menu-pc c-menu--pc">Menu</h2>
+            <?php wp_nav_menu( array( 
+                'theme_location' => 'categorymenu' 
+            ));
+             ?>
+        </div>
     </div>
 <?php get_footer(); ?>

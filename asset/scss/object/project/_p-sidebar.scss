@@ -13,14 +13,13 @@
 // ==================================================================================
 // all メニュー一覧の全体調整
 // ==================================================================================
-.p-sidebar {
+.menu-categorymenu-container {
     position: fixed;
     z-index: 100;
     top: 0;
     right: -120%;
     width: 328px;
     height: 100vh;
-    background-color: #F2EDE9;
     overflow: auto;
     transition: all 0.3s;
     @include tablet {
@@ -34,7 +33,7 @@
     &.is-active {
         right: 0;
     }
-    &__ul {
+    & .sub-menu {
         padding: 40px 0 60px 66px;
     }
 }
