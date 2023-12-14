@@ -25,7 +25,6 @@
         color: $color--titleGray;
     }
     @include pc {
-        padding-top: 0;
         margin-left: 65px;
         font-size: 6.4rem;
         line-height: 75px;
@@ -75,7 +74,7 @@
     }
 }
 
-.menu-item-object-category a {   // メニュー一覧のカテゴリー見出し
+.menu-item-object-category {   // メニュー一覧のカテゴリー見出し
     padding-left: 46px;
     color: $color--titleGray;
     font-weight: 700;

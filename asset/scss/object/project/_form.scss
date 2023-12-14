@@ -14,16 +14,16 @@
 // all 検索フォーム全体の調整
 // ==================================================================================
 .search-form {
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    width: 86%;
+    margin: 0 auto;
     position: relative;
     &::before {
         content: "\f002";
         position: absolute;
         top: calc( 46px/2 - 24px/2);
-        left: 36px;
+        left: 11px;
         width: 24px;
         height: 24px;
         color: #808080;
@@ -31,7 +31,17 @@
         font-size: 2.4rem;
         font-family: "Font Awesome 5 Free";
     }
+    label {
+        width: 67%;
+        @include tablet {
+            width: 72.5%;
+        }
+    }
+    @include tablet {
+        width: 65%;
+    }
     @include pc {
         margin-right: 32px;
+        margin-left: 10%;
     }
 }

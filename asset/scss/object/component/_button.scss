@@ -14,7 +14,8 @@
 // all
 // ==================================================================================
 .search-submit {   // 検索ボタン
-    width: 24vw;
+    display: block;
+    width: 27%;
     height: 46px;
     border: 1px solid $color--titleGray;
     border-radius: 10px;
@@ -23,7 +24,7 @@
     font-weight: 700;
     font-family: $font--roboto;
     @include tablet {
-        width: 16.3vw;
+        width: 23%;
     }
     @include pc {
         width: 7.08vw;

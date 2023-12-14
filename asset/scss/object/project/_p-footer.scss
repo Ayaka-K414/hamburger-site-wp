@@ -14,10 +14,28 @@
 // all
 // ==================================================================================
 .p-footer {
-    &__ul {
-        display: flex;
+    div {
+        ul {
+            display: flex;
+            li {
+                color: $color--titleWhite;
+                &:last-of-type {
+                    position: relative;
+                    margin-left: 32px;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 6px;
+                        left: -16px;
+                        width: 2px;
+                        height: 16px;
+                        background-color: $color--titleWhite;
+                    }
+                }
+            }
+        }
     }
-    &__copy {
+    small {
         font-size: 1.4rem;
         line-height: 20.79px;    
     }
