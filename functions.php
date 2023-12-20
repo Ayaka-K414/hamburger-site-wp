@@ -13,7 +13,13 @@ function custom_theme_support(){
     // タイトルタグを生成、管理画面の「設定▶︎一般▶︎サイトのタイトル」から情報を取得する
     add_theme_support( 'title-tag' );
 
-    // 管理画面にメニュー機能を登録する
+    // 投稿編集画面にアイキャッチ画像の機能を追加する
+    add_theme_support( 'post-thumbnails' );
+
+    // 管理画面にメニュー機能を表示させる
+    add_theme_support( 'menus' );
+
+    // 管理画面にメニューの箱を登録する
     register_nav_menus( array(
         'categorymenu' => 'カテゴリーメニュー',
         'footermenu' => 'フッターメニュー',

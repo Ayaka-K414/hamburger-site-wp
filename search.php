@@ -1,26 +1,4 @@
-/*
-Template Name: アーカイブサーチページ
-*/
 <?php get_header(); ?>
-<body>
-<!-- PC2カラム設定のflex親要素 -->
-    <div class="c-flex--parent-pc">
-
-<!-- フッター以外のコンテンツ全体を内包するdiv PC版でflexした時の左側、幅調整-->
-        <div class="c-flex--child-main">
-
-<!-- ヘッダー -->
-            <header class="l-header p-header">
-                <h1 class="p-header__title c-title--logo"><a href="front-page.html">Hamburger</a></h1>
-                <button class="p-header__menu c-menu">Menu</button>
-                <form class="p-form" action="./archive_search.html" method="post">
-                    <div class="p-form__input">
-                        <input class="p-form__input-child c-input" name="search" autocomplete="on">
-                    </div>
-                        <button class="p-form__button c-button" name="submit">検索</button>
-                </form>
-            </header>
-
 <!-- メインコンテンツ -->
             <main class="l-main">
 
@@ -41,7 +19,8 @@ Template Name: アーカイブサーチページ
 
 <!-- メニューカード -->
                     <ul class="p-menu-cards">
-                        <li class="p-menu-cards__list">
+                    <?php get_template_part( 'card' ); ?>
+                        <!-- <li class="p-menu-cards__list">
                             <figure class="p-menu-cards__fig">
                                 <img class="p-menu-cards__image c-image" src="../img/archive-menu.jpg" alt="チーズバーガーメニューの写真">
                                 <figcaption class="p-menu-cards__summary">
@@ -105,7 +84,7 @@ Template Name: アーカイブサーチページ
                                     </div>
                                 </figcaption>
                             </figure>
-                        </li>
+                        </li> -->
                     </ul>
 
 <!-- ページネーション -->

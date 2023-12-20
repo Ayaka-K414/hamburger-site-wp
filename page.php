@@ -1,26 +1,4 @@
-/*
-Template Name: ショップページ
-*/
 <?php get_header(); ?>
-<body>
-<!-- PC2カラム設定のflex親要素 -->
-    <div class="c-flex--parent-pc">
-
-<!-- フッター以外のコンテンツ全体を内包するdiv PC版でflexした時の左側、幅調整-->
-        <div class="c-flex--child-main">
-
-<!-- ヘッダー -->
-            <header class="l-header p-header">
-                <h1 class="p-header__title c-title--logo"><a href="front-page.html">Hamburger</a></h1>
-                <button class="p-header__menu c-menu">Menu</button>
-                <form class="p-form" action="./archive_search.html" method="post">
-                    <div class="p-form__input">
-                        <input class="p-form__input-child c-input" name="search" autocomplete="on">
-                    </div>
-                        <button class="p-form__button c-button" name="submit">検索</button>
-                </form>
-            </header>
-
 <!-- メインコンテンツ -->
             <main class="l-main">
 
@@ -50,11 +28,11 @@ Template Name: ショップページ
 
 <!-- 画像と説明文(逆位置) -->
                     <figure class="p-single-fig">
-                        <img class="p-single-fig__img" src="../img/single-fig.jpg" alt="">
+                        <img class="p-single-fig__img" src="<?php echo get_theme_file_uri( '/img/single-fig.jpg' ); ?>" alt="">
                         <figcaption class="p-single-fig__caption">
                             <figure class="p-single-fig__child">
                                 <div class="p-single-fig__img-child u-mgr10">
-                                    <img src="../img/single-photos.jpg" alt="">
+                                    <img src="<?php echo get_theme_file_uri( '/img/single-fig.jpg' ); ?>" alt="">
                                 </div>
                                 <figcaption class="p-single-fig__caption-child">
                                     <p class="p-single-fig__text c-text--p"> テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入りますテキストが入ります </p>
@@ -62,7 +40,7 @@ Template Name: ショップページ
                             </figure>
                             <figure class="p-single-fig__child">
                                 <div class="p-single-fig__img-child u-mgl10">
-                                    <img src="../img/single-photos.jpg" alt="">
+                                    <img src="<?php echo get_theme_file_uri( '/img/single-fig.jpg' ); ?>" alt="">
                                 </div>
                                 <figcaption class="p-single-fig__caption-child">
                                     <p class="p-single-fig__text c-text--p"> テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります </p>
@@ -73,17 +51,17 @@ Template Name: ショップページ
 
 <!-- 画像一覧 -->
                     <ul class="p-photos">
-                        <li class="p-photos__top"><img src="../img/single-photos.jpg" alt="">
+                        <li class="p-photos__top"><img src="<?php echo get_theme_file_uri( '/img/single-fig.jpg' ); ?>" alt="">
                             <ul class="p-photos__ul">
-                                <li class="p-photos__list"><img src="../img/single-photos.jpg" alt=""></li>
-                                <li class="p-photos__list"><img src="../img/single-photos.jpg" alt=""></li>
-                                <li class="p-photos__list"><img src="../img/single-photos.jpg" alt=""></li>
-                                <li class="p-photos__list"><img src="../img/single-photos.jpg" alt=""></li>
-                                <li class="p-photos__list"><img src="../img/single-photos.jpg" alt=""></li>
-                                <li class="p-photos__list"><img src="../img/single-photos.jpg" alt=""></li>
-                                <li class="p-photos__list"><img src="../img/single-photos.jpg" alt=""></li>
-                                <li class="p-photos__list"><img src="../img/single-photos.jpg" alt=""></li>
-                                <li class="p-photos__list"><img src="../img/single-photos.jpg" alt=""></li>
+                                <li class="p-photos__list"><img src="<?php echo get_theme_file_uri( '/img/single-fig.jpg' ); ?>" alt=""></li>
+                                <li class="p-photos__list"><img src="<?php echo get_theme_file_uri( '/img/single-fig.jpg' ); ?>" alt=""></li>
+                                <li class="p-photos__list"><img src="<?php echo get_theme_file_uri( '/img/single-fig.jpg' ); ?>" alt=""></li>
+                                <li class="p-photos__list"><img src="<?php echo get_theme_file_uri( '/img/single-fig.jpg' ); ?>" alt=""></li>
+                                <li class="p-photos__list"><img src="<?php echo get_theme_file_uri( '/img/single-fig.jpg' ); ?>" alt=""></li>
+                                <li class="p-photos__list"><img src="<?php echo get_theme_file_uri( '/img/single-fig.jpg' ); ?>" alt=""></li>
+                                <li class="p-photos__list"><img src="<?php echo get_theme_file_uri( '/img/single-fig.jpg' ); ?>" alt=""></li>
+                                <li class="p-photos__list"><img src="<?php echo get_theme_file_uri( '/img/single-fig.jpg' ); ?>" alt=""></li>
+                                <li class="p-photos__list"><img src="<?php echo get_theme_file_uri( '/img/single-fig.jpg' ); ?>" alt=""></li>
                             </ul>
                         </li>
                     </ul>
