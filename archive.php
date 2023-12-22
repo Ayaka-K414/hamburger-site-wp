@@ -23,29 +23,26 @@
                     </ul>
 
 <!-- ページネーション -->
-                    <!-- <ul class="p-pagination">
-                        <span class="p-pagination__notsp c-pagination--corrent">page 1/10</span>
-                        <div class="p-pagination__sp-flex">
-                            <li class="p-pagination__all c-pagination"><a href=""><span></span></a></li>
-                            <li class="p-pagination__sp c-pagination--forward"><a href=""><span>前へ</span></a></li>
-                        </div>
-                        <li class="p-pagination__notsp c-pagination--page"><a href=""><span>1</span></a></li>
-                        <li class="p-pagination__notsp c-pagination--page"><a href=""><span>2</span></a></li>
-                        <li class="p-pagination__notsp c-pagination--page"><a href=""><span>3</span></a></li>
-                        <li class="p-pagination__notsp c-pagination--page"><a href=""><span>4</span></a></li>
-                        <li class="p-pagination__notsp c-pagination--page"><a href=""><span>5</span></a></li>
-                        <li class="p-pagination__notsp c-pagination--page"><a href=""><span>6</span></a></li>
-                        <li class="p-pagination__notsp c-pagination--page"><a href=""><span>7</span></a></li>
-                        <li class="p-pagination__notsp c-pagination--page"><a href=""><span>8</span></a></li>
-                        <li class="p-pagination__notsp c-pagination--page"><a href=""><span>9</span></a></li>
-                        <div class="p-pagination__sp-flex">
-                            <li class="p-pagination__sp c-pagination--next"><a href=""><span>次へ</span></a></li>
-                            <li class="p-pagination__all c-pagination--right"><a href=""><span></span></a></li>
-                        </div>
-                    </ul> -->
+                    <ul class="sp-pagenation">
+                        <li>
+                            <?php if (get_previous_posts_link()):?>
+                            <?php previous_posts_link('&laquo;前へ'); ?>
+                            <?php endif; ?>
+                        </li>
+                        <li>
+                            <?php if (get_next_posts_link()):?>
+                            <?php next_posts_link('次へ&raquo;'); ?>
+                            <?php endif; ?>
+                        </li>
+                    </ul>
+
+                    <?php if (function_exists('wp_pagenavi')) {
+                        wp_pagenavi();
+                    } ?>
+
+
                 </article>
             </main>
         </div>
 <?php get_sidebar(); ?>
-    </div>
 <?php get_footer(); ?>

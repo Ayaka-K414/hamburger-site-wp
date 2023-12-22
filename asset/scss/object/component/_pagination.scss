@@ -13,52 +13,38 @@
 // ==================================================================================
 // archive-page ページネーション
 // ==================================================================================
-.c-pagination {   // 戻るボタン
-    position: relative;
+.nextpostslink, .previouspostslink {   // <<と>>ボタン
+    display: block;
     color: $color--titleGray;
-    a {
+    // font-size: 4.0rem;
+}
+
+.pages {   // 今のページ総合カウント
+    @include tablet {
+        display: block;
         color: $color--titleGray;
-        &::before {
-            content: "\0ab";
-            position: absolute;
-            top: -2px;
-            left: -26px;
-            width: 17.53px;
-            height: 17.07px;
-            font-weight: 100;
-            font-size: 3.2rem;
-            @include tablet {
-                top: -14px;
-                left: -32px;
-            }
-        }    
+        font-weight: 700;
+        font-family: $font--roboto;
+        line-height: 33px;
     }
 }
 
-.c-pagination--right {   // 進むボタン
-    position: relative;
-    color: $color--titleGray;
-    a {
-        color: $color--titleGray;
-        &::after {
-            content: "\0bb";
-            position: absolute;
-            top: -2px;
-            left: 2px;
-            width: 17.53px;
-            height: 17.07px;
-            font-weight: 100;
-            font-size: 3.2rem;
-            @include tablet {
-                top: -14px;
-                left: -4px;
-            }
-        }    
+.current {   // 現在のページ（背景茶色で数字が白）
+    @include tablet {
+        display: block;
+        width: 35px;
+        height: 35px;
+        border: 1px solid $color--titleGray;
+        background-color: $color--cardbg;
+        color: $color--titleWhite;    
+        font-weight: 700;
+        font-family: $font--roboto;
+        text-align: center;
+        line-height: 33px;
     }
 }
 
-.c-pagination--page {   // 1〜9
-    display: none;
+.page {   // 1〜9
     @include tablet {
         display: block;
         width: 35px;
@@ -74,19 +60,14 @@
     }
 }
 
-.c-pagination--corrent {   // 今のページカウント
-    display: none;
-    @include tablet {
-        display: block;
-        color: $color--titleGray;
-        font-weight: 700;
-        font-family: $font--roboto;
-        line-height: 33px;
-    }
-}
-
-.c-pagination--forward, .c-pagination--next {   // SPの前へと次へボタン
+.sp-pagenation {   // SPの前へと次へボタン
+    display: flex;
+    justify-content: space-between;
+    padding-top: 62px;
     line-height: 24px;
+    li:last-child {
+        text-align: right;
+    }
     a {
         color: $color--titleGray;
     }
