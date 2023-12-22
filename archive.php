@@ -40,7 +40,6 @@
                         wp_pagenavi();
                     } ?>
 
-
                 </article>
             </main>
         </div>

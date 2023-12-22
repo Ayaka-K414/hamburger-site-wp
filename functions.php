@@ -17,11 +17,11 @@ function custom_theme_support(){
     add_theme_support( 'post-thumbnails' );
 
     // 管理画面にメニュー機能を表示させる
-    add_theme_support( 'menus' );
+    // add_theme_support( 'menus' );
 
     // 管理画面にメニューの箱を登録する
     register_nav_menus( array(
-        'categorymenu' => 'カテゴリーメニュー',
+        'sidebarmenu' => 'サイドバーメニュー',
         'footermenu' => 'フッターメニュー',
     ));
 }
@@ -46,21 +46,3 @@ function add_links() {
     echo '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>';
 }
 add_action('wp_head','add_links');
-
-
-
-// // 管理画面にウィジェット機能を登録する
-// function hamburger_widgets_init() {
-//     register_sidebar (
-//         array(
-//             'name'          => 'Menu',
-//             'id'            => 'burgers',
-//             'description'   => 'バーガーメニュー',
-//             'before_widget' => '<div id="%1$s" class="widget %2$s">',
-//             'after_widget'  => '</div>',
-//             'before_title'  => '<h2><i class="fa fa-folder-open" aria-hidden="true"></i>',
-//             'after_title'   => "</h2>\n",
-//         )
-//     );
-// }
-// add_action( 'widgets_init', 'hamburger_widgets_init' );

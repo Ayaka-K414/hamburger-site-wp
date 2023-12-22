@@ -5,7 +5,7 @@
             <button class="p-sidebar__menu c-menu--close"></button>
             <h2 class="p-sidebar__menu-pc c-menu--pc">Menu</h2>
             <?php wp_nav_menu( array( 
-                'theme_location' => 'categorymenu' 
+                'theme_location' => 'sidebarmenu' 
             ));
             ?>
         </aside>
