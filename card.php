@@ -3,7 +3,13 @@
         <?php the_post(); ?>
             <li class="p-menu-cards__list">
                 <figure class="p-menu-cards__fig">
+
+                <?php if (has_post_thumbnail()) : ?>
                     <?php the_post_thumbnail(); ?>
+                    <?php else: ?>
+                    <img src="<?php echo get_theme_file_uri('/img/noimage.png'); ?>" alt="NoImage">
+                    <?php endif; ?>
+
                     <figcaption class="p-menu-cards__summary">
                         <h3 class="p-menu-cards__first-title c-title--first-title"><?php the_title(); ?></h3>
                         <h4 class="p-menu-cards__second-title c-title--second-title">小見出しが入ります</h4>
@@ -15,4 +21,6 @@
                 </figure>
             </li>
     <?php endwhile; ?>
+    <?php else: ?>
+    <p>表示する記事がありません</p>
 <?php endif; ?>
