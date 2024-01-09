@@ -1,13 +1,12 @@
-<?php if ( have_posts() ) : ?>
-    <?php while(have_posts()): ?>
-        <?php the_post(); ?>
+<?php if (have_posts()) : ?>
+    <?php while (have_posts()) : the_post();?>
             <li class="p-menu-cards__list">
                 <figure class="p-menu-cards__fig">
 
-                <?php if (has_post_thumbnail()) : ?>
-                    <?php the_post_thumbnail(); ?>
+                    <?php if (has_post_thumbnail()) : ?>
+                        <?php the_post_thumbnail(); ?>
                     <?php else: ?>
-                    <img src="<?php echo get_theme_file_uri('/img/noimage.png'); ?>" alt="NoImage">
+                        <img src="<?php echo get_theme_file_uri('/img/noimage.png'); ?>" alt="NoImage">
                     <?php endif; ?>
 
                     <figcaption class="p-menu-cards__summary">
@@ -21,6 +20,8 @@
                 </figure>
             </li>
     <?php endwhile; ?>
-    <?php else: ?>
-    <p>表示する記事がありません</p>
+<?php else: ?>
+        <div class="c-text--bold">
+            <p>検索条件に該当しませんでした。検索し直すか、メニュー一覧からお選びください。</p>
+        </div>
 <?php endif; ?>

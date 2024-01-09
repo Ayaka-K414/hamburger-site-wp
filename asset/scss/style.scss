@@ -8,7 +8,6 @@
 // Layout
 
 @use "layout/header";
-@use "layout/main";
 @use "layout/sidebar";
 @use "layout/footer";
 
@@ -47,7 +46,6 @@
 @use "object/project/ol";
 @use "object/project/ul";
 @use "object/project/code";
-@use "object/project/table";
 
 
 // Utility
