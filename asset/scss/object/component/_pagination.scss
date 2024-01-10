@@ -43,7 +43,7 @@
     }
 }
 
-.page {   // 1〜9
+.smaller,.larger {   // 1〜9
     @include tablet {
         display: block;
         width: 35px;

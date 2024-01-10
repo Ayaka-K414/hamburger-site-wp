@@ -521,7 +521,7 @@ body.is-active {
 }
 
 @media screen and (min-width: 768px) {
-  .page {
+  .smaller, .larger {
     display: block;
     width: 35px;
     height: 35px;
@@ -531,7 +531,7 @@ body.is-active {
     text-align: center;
     line-height: 33px;
   }
-  .page a {
+  .smaller a, .larger a {
     color: #707070;
   }
 }
