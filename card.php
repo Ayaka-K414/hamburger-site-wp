@@ -6,7 +6,7 @@
                     <?php if (has_post_thumbnail()) : ?>
                         <?php the_post_thumbnail(); ?>
                     <?php else: ?>
-                        <img src="<?php echo get_theme_file_uri('/img/noimage.png'); ?>" alt="NoImage">
+                        <img src="<?php echo esc_url(get_theme_file_uri('/img/noimage.png')); ?>" alt="NoImage">
                     <?php endif; ?>
 
                     <figcaption class="p-menu-cards__summary">

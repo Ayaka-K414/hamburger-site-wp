@@ -16,8 +16,8 @@ function custom_theme_support(){
     // 投稿編集画面にアイキャッチ画像の機能を追加する
     add_theme_support( 'post-thumbnails' );
 
-    // 管理画面にメニュー機能を表示させる
-    // add_theme_support( 'menus' );
+    // フィードリンク
+    add_theme_support( 'automatic-feed-links' );
 
     // 管理画面にメニューの箱を登録する
     register_nav_menus( array(
