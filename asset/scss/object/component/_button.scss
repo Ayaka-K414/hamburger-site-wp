@@ -27,7 +27,7 @@
         width: 23%;
     }
     @include pc {
-        width: 7.08vw;
+        width: 25%;
     }
 }
 
@@ -46,6 +46,9 @@
     font-weight: 700;
     text-align: center;
     line-height: 17px;
+    a {
+        display: block
+    }
 }
 
 

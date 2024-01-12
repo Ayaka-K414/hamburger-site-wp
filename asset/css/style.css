@@ -43,7 +43,7 @@ a {
   height: 150px;
   padding: 16px 0;
   background-image: url(../../img/footerbg.png);
-  background-size: cover;
+  background-repeat: repeat;
 }
 @media screen and (min-width: 1024px) {
   .l-footer {
@@ -69,7 +69,7 @@ a {
 }
 @media screen and (min-width: 1024px) {
   .search-submit {
-    width: 7.08vw;
+    width: 25%;
   }
 }
 
@@ -84,6 +84,9 @@ a {
   font-weight: 700;
   text-align: center;
   line-height: 17px;
+}
+.c-button--link a, .c-button--link-404 a {
+  display: block;
 }
 
 .c-button--link-404 {
@@ -767,11 +770,16 @@ body.is-active {
   font-family: "Font Awesome 5 Free";
 }
 .search-form label {
-  width: 67%;
+  width: 69%;
 }
 @media screen and (min-width: 768px) {
   .search-form label {
-    width: 72.5%;
+    width: 73%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .search-form label {
+    width: 70%;
   }
 }
 @media screen and (min-width: 768px) {

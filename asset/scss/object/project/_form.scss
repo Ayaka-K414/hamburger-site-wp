@@ -32,9 +32,12 @@
         font-family: "Font Awesome 5 Free";
     }
     label {
-        width: 67%;
+        width: 69%;
         @include tablet {
-            width: 72.5%;
+            width: 73%;
+        }
+        @include pc {
+            width: 70%;
         }
     }
     @include tablet {
