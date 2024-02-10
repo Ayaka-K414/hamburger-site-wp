@@ -19,6 +19,10 @@ a {
   color: #707070;
 }
 
+a:hover {
+  opacity: 0.6;
+}
+
 .l-header {
   height: 215px;
   width: 100%;
@@ -78,7 +82,6 @@ a {
   width: 163px;
   height: 42px;
   border-radius: 20px;
-  padding: 12.5px 0;
   margin: 0 auto;
   background-color: #FFF;
   font-weight: 700;
@@ -87,11 +90,16 @@ a {
 }
 .c-button--link a, .c-button--link-404 a {
   display: block;
+  padding: 12.5px 0;
+}
+.c-button--link a:hover, .c-button--link-404 a:hover {
+  opacity: 0.6;
 }
 
 .c-button--link-404 {
   width: 300px;
   height: 42px;
+  padding: 10px;
   background-color: #3C2B1C;
   color: #FFF;
 }

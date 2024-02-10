@@ -18,9 +18,9 @@
     line-height: 26.73px;
     a {
         color: $color--titleWhite;
-    }
-    a:visited {
-        color: $color--titleWhite;
+        &:visited {
+            color: $color--titleWhite;
+        }
     }
     @include pc {
         font-size: 2.0rem;

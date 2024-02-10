@@ -14,13 +14,13 @@
                         </div>
                         <div class="p-ordermethods__flex--bottom c-flex">
                             <dl class="p-ordermethods__dl1">
-                                <a href="">
+                                <a href="<?php echo esc_url( get_category_link('3')); ?>">
                                     <dt class="p-ordermethods__dt c-text--bold">Take OUT</dt>
                                     <dd class="p-ordermethods__dd c-text">当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています</dd>
                                 </a>
                             </dl>
                             <dl class="p-ordermethods__dl2">
-                                <a href="">
+                                <a href="<?php echo esc_url( get_category_link('3')); ?>">
                                     <dt class="p-ordermethods__dt c-text--bold">Take OUT</dt>
                                     <dd class="p-ordermethods__dd c-text">当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています</dd>
                                 </a>
@@ -34,13 +34,13 @@
                         </div>
                         <div class="p-ordermethods__flex--bottom c-flex">
                             <dl class="p-ordermethods__dl1">
-                                <a href="">
+                                <a href="<?php echo esc_url( get_category_link('2')); ?>">
                                     <dt class="p-ordermethods__dt c-text--bold">Eat In</dt>
                                     <dd class="p-ordermethods__dd c-text">店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです</dd>
                                 </a>
                             </dl>
                             <dl class="p-ordermethods__dl2">
-                                <a href="">
+                                <a href="<?php echo esc_url( get_category_link('2')); ?>">
                                     <dt class="p-ordermethods__dt c-text--bold">Eat In</dt>
                                     <dd class="p-ordermethods__dd c-text">店内でお食事いただけるメニューです店内でお食事いただけるメニューです店内でお食事いただけるメニューです</dd>
                                 </a>
