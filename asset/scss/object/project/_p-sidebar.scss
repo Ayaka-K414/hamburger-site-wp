@@ -34,7 +34,16 @@
     &.is-active {
         right: 0;
     }
-    &__ul {
-        padding: 40px 0 60px 66px;
+    div {
+        ul {
+            li {
+                // a:hover {
+                //     opacity: 0.6;
+                // }
+                ul {
+                    padding: 40px 0 60px 20px;
+                }                 
+            }
+        }
     }
 }

@@ -25,7 +25,7 @@
         display: flex;
         }
     }
-    &__image {
+    img {
         display: block;
         width: 100%;
         height: auto;
@@ -48,7 +48,7 @@
             padding: 44px 63px 70px;
         }
     }
-    &__text {
+    p {
         padding-bottom: 40px;
     }
 }

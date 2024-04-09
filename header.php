@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="<?php language_attributes(); ?>">
+<html <?php language_attributes(); ?>>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="<?php bloginfo ( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="RaiseTech最終課題のハンバーガーサイト">
+    <meta name="description" content="<?php bloginfo( 'description' ); ?>">
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+<?php wp_body_open(); ?> 
 <!-- PC2カラム設定のflex親要素 -->
     <div class="c-flex--parent-pc">
 
@@ -14,8 +15,8 @@
         <div class="c-flex--child-main">
 
 <!-- ヘッダー -->
-            <header class="l-header p-header">
-                <h1 class="p-header__title c-title--logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Hamburger</a></h1>
+            <header class="l-header p-header" role="banner">
+                <h1 class="p-header__title c-title--logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
                 <button class="p-header__menu c-menu">Menu</button>
                 <?php get_search_form(); ?>
             </header>

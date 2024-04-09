@@ -13,21 +13,16 @@
 // ==================================================================================
 // single-page 引用のpadding等調整
 // ==================================================================================
-.p-blockquote {
+.wp-block-quote {
     padding: 30px 18px 27px 20px;
-    margin-bottom: 30px;
-    background-color: $color--quote;
     @include tablet {
         padding: 50px 57px 57px 50px;
         margin-bottom: 60px;
     }
-    &__text {
+    p {
         padding-bottom: 4px;
         @include tablet {
             padding-bottom: 60px;
         }
-    }
-    &__footer {
-        padding-bottom: 0;
     }
 }

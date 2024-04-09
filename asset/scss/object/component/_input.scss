@@ -13,20 +13,17 @@
 // ==================================================================================
 // all 検索ボックス
 // ==================================================================================
-#s {
-    width: 57.6vw;
-    max-width: 364px;
+.search-field {
+    display: block;
+    width: 100%;
     height: 46px;
     padding-left: 38px;
-    margin-right: 16px;
+    padding-right: 6px;
+    margin-right: 5%;
     border: 1px solid $color--titleGray;
     border-radius: 10px;
     background-color: $color--titleWhite;
     @include tablet {
-        width: 47.48vw;
-    }
-    @include pc {
-        width: 20vw;
-        max-width: 396px;
+        margin-right: 3%;
     }
 }

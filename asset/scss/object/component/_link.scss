@@ -13,12 +13,13 @@
 // ==================================================================================
 // all フッターのリンク
 // ==================================================================================
-.c-link {
+.menu-item-object-page {
     font-size: 1.8rem;
     line-height: 26.73px;
     a {
-    &:visited {
         color: $color--titleWhite;
+        &:visited {
+            color: $color--titleWhite;
         }
     }
     @include pc {

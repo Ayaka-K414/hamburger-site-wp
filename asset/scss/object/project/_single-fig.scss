@@ -13,27 +13,6 @@
 // ==================================================================================
 // single-page figureタグ内の調整
 // ==================================================================================
-.p-single-fig {
-    &__img {
-        width: 100%;
-        margin-bottom: 30px;
-    }
-    &__child {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 30px;
-        @include pc {
-            margin-bottom: 60px;
-        }
-        &:nth-child( even ) {
-            flex-direction: row-reverse;
-        }
-    }
-    &__img-child {
-        flex-basis: 50%;
-        flex-shrink: 0;
-        img {
-            width: 100%;
-        }
-    }
+.wp-block-image {
+    width: 100%;
 }

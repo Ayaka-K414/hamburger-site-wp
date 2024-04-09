@@ -19,7 +19,7 @@
     height: 150px;
     padding: 16px 0;
     background-image: url(../../img/footerbg.png);
-    background-size: cover;
+    background-repeat: repeat;
     @include pc {
         padding: 41px 0 27px 0;
     }
